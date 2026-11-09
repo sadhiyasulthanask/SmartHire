@@ -25,6 +25,19 @@ st.set_page_config(
 st.markdown("""
 <style>
 
+/* Make job description text visible */
+
+.stTextArea textarea {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+    caret-color: #111827 !important;
+    font-size: 16px !important;
+}
+
+.stTextArea textarea::placeholder {
+    color: #64748b !important;
+    opacity: 1 !important;
+}
 .stApp {
     background-color: #0e1117;
     color: #f5f5f5;
