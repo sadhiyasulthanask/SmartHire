@@ -13,7 +13,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 st.set_page_config(
     page_title="SmartHire | Resume Analyzer",
-    page_icon="📄",
+    page_icon="None",
     layout="wide"
 )
 
@@ -107,7 +107,7 @@ st.markdown("""
 
 st.markdown("""
 <div class="hero">
-    <h1>📄 SmartHire</h1>
+    <h1>SmartHire</h1>
     <h3>Find Your Career Match.</h3>
     <p>
         An AI-powered resume analysis platform that helps
