@@ -24,6 +24,24 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+/* Download button styling */
+
+.stDownloadButton > button {
+    background-color: #13B8A6 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 700 !important;
+}
+
+.stDownloadButton > button:hover {
+    background-color: #0E9488 !important;
+    color: #FFFFFF !important;
+}
+
+.stDownloadButton > button p {
+    color: #FFFFFF !important;
+}
 
 /* Make job description text visible */
 
