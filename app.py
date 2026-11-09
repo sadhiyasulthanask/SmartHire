@@ -405,5 +405,3 @@ if analyse:
 
         st.success("Analysis completed successfully!")
 
-</>
-
