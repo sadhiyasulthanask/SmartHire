@@ -286,37 +286,62 @@ if analyse:
         # 10. RESULTS
         # ----------------------------------
 
-        st.divider()
+        
 
-        st.markdown(
-            '<div class="section-title">📊 Resume Analysis Dashboard</div>',
-            unsafe_allow_html=True
-        )
+st.divider()
 
-        col1, col2, col3 = st.columns(3)
+st.markdown(
+    '<div class="section-title">📊 Your Resume Analysis Dashboard</div>',
+    unsafe_allow_html=True
+)
 
-        with col1:
-            st.metric(
-                "Text Similarity",
-                f"{score:.2f}%"
-            )
+# Calculate skill coverage
+total_job_skills = len(job_skills)
 
-        with col2:
-            st.metric(
-                "Matching Skills",
-                len(matching_skills)
-            )
+if total_job_skills > 0:
+    skill_coverage = (
+        len(matching_skills) / total_job_skills
+    ) * 100
+else:
+    skill_coverage = 0
 
-        with col3:
-            st.metric(
-                "Missing Skills",
-                len(missing_skills)
-            )
+# Display dashboard metrics
+col1, col2, col3 = st.columns(3)
 
-        st.caption(
-            "Text similarity measures how closely the resume and "
-            "job description match in wording. It is not a selection probability."
-        )
+with col1:
+    st.metric(
+        "Text Similarity",
+        f"{score:.2f}%"
+    )
+
+with col2:
+    st.metric(
+        "Matching Skills",
+        len(matching_skills)
+    )
+
+with col3:
+    st.metric(
+        "Missing Skills",
+        len(missing_skills)
+    )
+
+# Skill coverage visualization
+st.markdown("### 🎯 Required Skill Coverage")
+
+st.progress(int(skill_coverage))
+
+st.write(
+    f"You have {skill_coverage:.1f}% of the "
+    "detected required skills in your resume."
+)
+
+st.caption(
+    "Skill coverage is calculated from the skills "
+    "detected by our current skill dictionary. "
+    "Text similarity and skill coverage are different measurements."
+)
+
 
         # ----------------------------------
         # 11. SKILL ANALYSIS
