@@ -86,3 +86,18 @@ B.Tech – Artificial Intelligence and Machine Learning
 ## Acknowledgement
 
 This project was developed as a hands-on learning experience to apply Python, machine learning concepts, text processing, and web application development.
+
+## Screenshots
+
+### Home Page
+![Home Page](home.png)
+
+### Resume and Job Description Input
+![Input Section](Input.png)
+
+### Results Dashboard
+![Results Dashboard](dashboard.png)
+
+### Skill Analysis
+![Skill Analysis](skill_analysis.png)
+
