@@ -564,15 +564,5 @@ if analyse_button:
             )
 
 
-# ==========================================
-# 21. FOOTER
-# ==========================================
-
-st.divider()
-
-st.markdown(
-    "<center>Built with ❤️ using Python and Streamlit | SmartHire</center>",
-    unsafe_allow_html=True
-)
 
 
