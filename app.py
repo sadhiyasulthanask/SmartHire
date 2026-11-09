@@ -418,7 +418,7 @@ if analyse_button:
                 # 15. RESULTS DASHBOARD
                 # ==================================
 
-                st.divider()
+            
 
                 st.markdown(
                     '<div class="section-heading">'
@@ -481,7 +481,7 @@ if analyse_button:
                 # 17. SKILL ANALYSIS
                 # ==================================
 
-                st.divider()
+            
 
                 st.markdown(
                     '<div class="section-heading">'
@@ -562,7 +562,7 @@ if analyse_button:
                 # 19. IMPROVEMENT SUGGESTIONS
                 # ==================================
 
-                st.divider()
+                
 
                 st.markdown(
                     '<div class="section-heading">'
@@ -599,18 +599,12 @@ if analyse_button:
                 # 20. FINAL MESSAGE
                 # ==================================
 
-                st.divider()
+                
 
                 st.success(
                     "🎉 Resume analysis completed successfully!"
                 )
 
-                st.caption(
-                    "SmartHire currently uses TF-IDF, cosine "
-                    "similarity and dictionary-based skill "
-                    "extraction. Its results are preliminary "
-                    "indicators, not hiring decisions."
-                )
                 
                 # ==================================
                 # DOWNLOAD ANALYSIS REPORT
