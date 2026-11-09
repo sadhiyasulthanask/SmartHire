@@ -30,7 +30,7 @@ st.write(
 # -------------------------------
 
 skills = [
-    "python", "java", "c", "sql",
+    "python", "java", "c", "sql","mysql",
     "machine learning", "deep learning",
     "pandas", "numpy", "html", "css",
     "javascript", "data analysis",
