@@ -128,6 +128,30 @@ st.markdown("""
     margin-bottom: 10px;
 }
 
+/* Improve dashboard metric visibility */
+
+[data-testid="stMetric"] {
+    background-color: #1e293b !important;
+    padding: 20px !important;
+    border-radius: 12px !important;
+    border: 1px solid #475569 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #cbd5e1 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #38bdf8 !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMetricDelta"] {
+    color: #ffffff !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
